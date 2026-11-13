@@ -1,0 +1,13 @@
+cabal-version:      2.4
+name:               ppp-faculty
+version:            1.0
+synopsis:           Лабораторна робота 1: ІС "Пакети прикладних програм факультету"
+build-type:         Simple
+
+executable ppp-faculty
+    main-is:          Main.hs
+    hs-source-dirs:   src
+    other-modules:    Model, Classes, Input, Instances, Menu, Reports
+    build-depends:    base, text, time, bytestring, mysql, mysql-simple
+    default-language: Haskell2010
+    ghc-options:      -Wall
